@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-bottom: none;
+    background-image: url('../imgs/背景.png');
+    position: relative;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top: none;
+    float: left;
+}
+#container > div {
+    float: right;
+}
+#person > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../imgs/蛇头_左.png) no-repeat center center;
+}
+#person > div:not(:first-child) {
+    background: url(../imgs/蛇身.png) no-repeat center center;
+}
+.food {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../imgs/食物.png) no-repeat center center;
+}
